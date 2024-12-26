@@ -4,6 +4,8 @@ import ErrorPage from "../pages/ErrorPage";
 import Homepage from "../pages/Homepage";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import AddArtifact from "../pages/AddArtifact";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+      {
+        path: "/add-artifact",
+        element: (
+          <PrivateRoute>
+            <AddArtifact />,
+          </PrivateRoute>
+        ),
       },
     ],
   },

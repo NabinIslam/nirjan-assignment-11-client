@@ -48,12 +48,12 @@ const Header = () => {
                     {user.email}
                   </span>
                 </Dropdown.Header>
-                <Link to="/add-visa">
+                <Link to="/add-artifact">
                   <Dropdown.Item>Add Artifact</Dropdown.Item>
                 </Link>
 
-                <Link to="/my-added-visas">
-                  <Dropdown.Item>My Added Visas</Dropdown.Item>
+                <Link to="/my-added-artifacts">
+                  <Dropdown.Item>My Added Artifacts</Dropdown.Item>
                 </Link>
 
                 <Link to="/my-visa-applications">
