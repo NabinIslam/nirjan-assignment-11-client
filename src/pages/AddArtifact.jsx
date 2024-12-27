@@ -10,23 +10,27 @@ const AddArtifact = () => {
 
   const onSubmit = data => {
     console.log("🚀 ~ onSubmit ~ data:", data);
-    // const visaData = { ...data, addedBy: user.email };
+    const visaData = {
+      ...data,
+      adder_name: user.name,
+      adder_email: user.email,
+    };
 
-    // fetch("https://visa-master-server.vercel.app/artifacts", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify(visaData),
-    // })
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     if (data.acknowledged) {
-    //       reset();
-    //       toast.success("Artifact added successfully");
-    //     }
-    //   })
-    //   .catch(err => console.error(err));
+    fetch("http://localhost:5000/artifacts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(visaData),
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.acknowledged) {
+          reset();
+          toast.success("Artifact added successfully");
+        }
+      })
+      .catch(err => console.error(err));
   };
 
   return (

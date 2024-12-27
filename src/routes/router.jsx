@@ -33,6 +33,14 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
+      {
+        path: "/add-artifact",
+        element: (
+          <PrivateRoute>
+            <AddArtifact />,
+          </PrivateRoute>
+        ),
+      },
     ],
   },
 ]);

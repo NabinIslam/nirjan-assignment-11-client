@@ -27,7 +27,7 @@ const Header = () => {
       <nav className="container bg-white">
         <Navbar fluid rounded className="bg-white">
           <Navbar.Brand>
-            <Link className="font-extrabold text-xl">VisaMaster</Link>
+            <Link className="font-extrabold text-xl">ArtifactHub</Link>
           </Navbar.Brand>
           <div className="flex md:order-2">
             {user ? (
