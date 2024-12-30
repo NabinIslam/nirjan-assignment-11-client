@@ -56,10 +56,6 @@ const Header = () => {
                   <Dropdown.Item>My Artifacts</Dropdown.Item>
                 </Link>
 
-                <Link to="/my-visa-applications">
-                  <Dropdown.Item>My Visa Applications</Dropdown.Item>
-                </Link>
-
                 <Dropdown.Divider />
                 <Dropdown.Item onClick={handleLogout}>Logout</Dropdown.Item>
               </Dropdown>
