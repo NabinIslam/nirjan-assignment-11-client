@@ -39,7 +39,7 @@ const Register = () => {
   return (
     <main className="pt-40">
       <Helmet>
-        <title>Lingo Bingo | Register</title>
+        <title>Artifact | Register</title>
       </Helmet>
       <div className="container">
         <form

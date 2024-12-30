@@ -13,7 +13,7 @@ const Footer = () => {
           <FaPhone /> +8801234568901
         </h6>
         <p className="text-center text-sm">
-          &copy; 2024 VisaMaster. All rights reserved.
+          &copy; 2024 Artifacthub. All rights reserved.
         </p>
       </div>
     </footer>

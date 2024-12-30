@@ -40,7 +40,7 @@ const Login = () => {
   return (
     <main className="pt-40">
       <Helmet>
-        <title>Lingo Bingo | Login</title>
+        <title>Artifact | Login</title>
       </Helmet>
       <form
         className="flex max-w-md flex-col gap-4 mx-auto"

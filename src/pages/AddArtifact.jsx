@@ -3,20 +3,20 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { AuthContext } from "../provider/AuthProvider";
+import { Helmet } from "react-helmet-async";
 
 const AddArtifact = () => {
   const { user } = useContext(AuthContext);
   const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = data => {
-    console.log("🚀 ~ onSubmit ~ data:", data);
     const visaData = {
       ...data,
       adder_name: user.name,
       adder_email: user.email,
     };
 
-    fetch("http://localhost:5000/artifacts", {
+    fetch("https://artifact-xi.vercel.app/artifacts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -35,6 +35,9 @@ const AddArtifact = () => {
 
   return (
     <main className="py-[100px]">
+      <Helmet>
+        <title>Artifact | Add Artifact</title>
+      </Helmet>
       <div className="container">
         <h2 className="text-center font-bold text-4xl mb-5">Add an Artifact</h2>
         <form

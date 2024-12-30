@@ -52,8 +52,8 @@ const Header = () => {
                   <Dropdown.Item>Add Artifact</Dropdown.Item>
                 </Link>
 
-                <Link to="/my-added-artifacts">
-                  <Dropdown.Item>My Added Artifacts</Dropdown.Item>
+                <Link to="/my-artifacts">
+                  <Dropdown.Item>My Artifacts</Dropdown.Item>
                 </Link>
 
                 <Link to="/my-visa-applications">
@@ -75,7 +75,7 @@ const Header = () => {
             <Navbar.Link href="/" active={pathname === "/"}>
               Home
             </Navbar.Link>
-            <Navbar.Link href="/all-visas" active={pathname === "/all-visas"}>
+            <Navbar.Link href="/artifacts" active={pathname === "/artifacts"}>
               All Artifacts
             </Navbar.Link>
           </Navbar.Collapse>
